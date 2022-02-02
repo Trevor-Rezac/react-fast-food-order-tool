@@ -36,3 +36,26 @@
     transform: rotate(360deg);
   }
 }
+
+.order-form {
+  height: 150px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+}
+
+.order-images {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  margin: 10px;
+}
+
+img {
+  height: 200px;
+  width: 175px;
+}
+
+.instruction-list {
+  margin-top: 5px;
+}

@@ -4,6 +4,7 @@ import './App.css';
 import NameInput from './NameInput';
 import FoodDropdown from './FoodDropdown';
 import SideDropdown from './SideDropdown';
+import DrinkDropdown from './DrinkDropdown';
 
 
 function App() {
@@ -11,8 +12,9 @@ function App() {
   const [customerName, setCustomerName] = useState('Customer');
   const [foodId, setFoodId] = useState(1);
   const [sideId, setSideId] = useState(1);
+  const [drinkId, setDrinkId] = useState(1);
 
-  console.log('||', foodId, sideId);
+  console.log('||', foodId, sideId, drinkId);
 
   return (
     <div className="App">
@@ -22,6 +24,7 @@ function App() {
       <div className='order-form'>
         <FoodDropdown setFoodId={setFoodId}></FoodDropdown>
         <SideDropdown setSideId={setSideId}></SideDropdown>
+        <DrinkDropdown setDrinkId={setDrinkId}></DrinkDropdown>
       </div>
     </div>
   );

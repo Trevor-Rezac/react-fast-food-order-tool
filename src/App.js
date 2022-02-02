@@ -5,6 +5,7 @@ import NameInput from './NameInput';
 import FoodDropdown from './FoodDropdown';
 import SideDropdown from './SideDropdown';
 import DrinkDropdown from './DrinkDropdown';
+import FoodImages from './FoodImages';
 
 
 function App() {
@@ -14,17 +15,18 @@ function App() {
   const [sideId, setSideId] = useState(1);
   const [drinkId, setDrinkId] = useState(1);
 
-  console.log('||', foodId, sideId, drinkId);
+  // console.log('||', foodId, sideId, drinkId);
 
   return (
     <div className="App">
       <h2>Order for: {customerName}</h2>
-      <NameInput setCustomerName={setCustomerName}></NameInput>
 
+      <FoodImages foodId={foodId} sideId={sideId} drinkId={drinkId}></FoodImages>
       <div className='order-form'>
         <FoodDropdown setFoodId={setFoodId}></FoodDropdown>
         <SideDropdown setSideId={setSideId}></SideDropdown>
         <DrinkDropdown setDrinkId={setDrinkId}></DrinkDropdown>
+        <NameInput setCustomerName={setCustomerName}></NameInput>
       </div>
     </div>
   );

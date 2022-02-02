@@ -7,6 +7,7 @@ import SideDropdown from './SideDropdown';
 import DrinkDropdown from './DrinkDropdown';
 import FoodImages from './FoodImages';
 import InstructionForm from './InstructionForm';
+import InstructionList from './InstructionList';
 
 
 function App() {
@@ -33,6 +34,7 @@ function App() {
       </div>
 
       <InstructionForm specialInstructions={specialInstructions} setSpecialInstructions={setSpecialInstructions}></InstructionForm>
+      <InstructionList specialInstructions={specialInstructions}></InstructionList>
     </div>
   );
 }

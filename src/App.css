@@ -37,6 +37,13 @@
   }
 }
 
+.order-form {
+  height: 150px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+}
+
 .order-images {
   display: flex;
   flex-direction: row;

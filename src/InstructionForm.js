@@ -3,7 +3,7 @@ import React, { useState } from 'react';
 export default function InstructionForm({ specialInstructions, setSpecialInstructions }) {
 
   const [instructionForm, setInstructionForm] = useState('');
-  console.log('||', instructionForm);
+//   console.log('||', instructionForm);
 
   function handleChange(e) {
     setInstructionForm(e.target.value);

@@ -19,7 +19,7 @@ function App() {
   const [specialInstructions, setSpecialInstructions] = useState(['make it extra saucy']);
 
   // console.log('||', foodId, sideId, drinkId);
-  console.log('||', specialInstructions);
+  // console.log('||', specialInstructions);
 
   return (
     <div className="App">
